@@ -1,0 +1,47 @@
+HTML CSSResult EDIT ON .container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box::before {
+  display: inline-block;
+  font-size: 16px;
+}
+
+.box:nth-child(1) {
+  transform: translateX(50px);
+  background-color: orange;
+}
+
+.box:nth-child(1)::before {
+  content: "translateX(50px)";
+}
+
+.box:nth-child(2) {
+  transform: translateY(120px);
+  background-color: #03a9f4;
+}
+
+.box:nth-child(2)::before {
+  content: "translateY(120px)";
+}
+
+.box:nth-child(3) {
+  transform: translate(-50px, -100px);
+  background-color: palevioletred;
+  transform: rotate(-45deg);
+}
+
+.box:nth-child(3)::before {
+  content: "translate(-50px, -100px)";
+}
