@@ -27,5 +27,89 @@
         <p class="product-price">Цена: 100 кредитов</p>
       </div>
     </a>
+    <form>
+      <!-- Клик по тексту "Сообщение" поставит курсор в поле ввода -->
+      <label>
+        Сообщение
+        <input type="text" />
+      </label>
+
+      <button type="submit">Отправить</button>
+    </form>
+    <form>
+      <!-- Клик по тексту "Сообщение" поставит курсор в поле ввода -->
+      <label for="message">Сообщение</label>
+      <input type="text" id="message" />
+
+      <button type="submit">Отправить</button>
+    </form>
+    <input type="text" name="message" placeholder="Введите сообщение" />
+    <form>
+      <label>
+        Почта
+        <input type="email" name="email" />
+      </label>
+
+      <label>
+        Пароль
+        <input type="password" name="pwd" />
+      </label>
+    </form>
+    <div role="group">
+      <p>Выберите цвет футболки:</p>
+
+      <label for="color-1">Красный</label>
+      <input id="color-1" name="color" type="radio" value="red" checked />
+
+      <label for="color-2">Белый</label>
+      <input id="color-2" name="color" type="radio" value="white" />
+
+      <label for="color-3">Зелёный</label>
+      <input id="color-3" name="color" type="radio" value="green" />
+    </div>
+    <div role="group">
+      <p>Чем вы увлекаетесь?:</p>
+
+      <label for="hobby-1">Музыка</label>
+      <input id="hobby-1" name="hobby" type="checkbox" value="music" />
+
+      <label for="hobby-2">Спорт</label>
+      <input id="hobby-2" name="hobby" type="checkbox" value="sports" />
+
+      <label for="hobby-3">Чтение</label>
+      <input id="hobby-3" name="hobby" type="checkbox" value="reading" />
+    </div>
+    <label for="age">Возраст</label>
+
+    <input id="age" type="number" name="age" />
+    <label for="age">Возраст</label>
+    <input id="age" type="range" name="age" min="0" max="120" value="30" />
+    <label for="avatar"> Загрузите аватар</label>
+    <input
+      type="file"
+      id="avatar"
+      name="avatar"
+      accept="image/jpeg,image/png"
+    />
+    <textarea
+      name="comment"
+      rows="5"
+      cols="45"
+      placeholder="Оставьте комментарий"
+    ></textarea>
+
+    <select name="month">
+      <optgroup label="Лето">
+        <option value="s6">Июнь</option>
+        <option value="s7">Июль</option>
+        <option value="s8">Август</option>
+      </optgroup>
+
+      <optgroup label="Осень">
+        <option value="s9">Сентябрь</option>
+        <option value="s10">Октябрь</option>
+        <option value="s11">Ноябрь</option>
+      </optgroup>
+    </select>
   </body>
 </html>
