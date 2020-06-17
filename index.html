@@ -7,12 +7,60 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <button data-modal-open>Заказать услугу</button>
-    <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <p>jij;ljlj;lij;lj</p>
-        <button data-modal-close>Отправить</button>
-      </div>
+    <form class="form" autocomplete="off">
+      <b>Оставьте свои данные, мы вам перезвоним</b>
+      <label class="form-field">
+        <input type="text" class="form-input" name="name" placeholder=" " />
+        <svg class="icon">
+          <use
+            href="./img/aa1.svg#icon-person-black-18dp-1"
+            width="15px"
+            height="15px"
+          ></use>
+        </svg>
+        <span class="form-label">Имя</span>
+      </label>
+
+      <label class="form-field">
+        <input type="tel" class="form-input" name="tel" placeholder=" " />
+        <span class="form-label">Телефон</span>
+        <span class="icon"></span>
+      </label>
+
+      <label class="form-field">
+        <input
+          type="textarea"
+          class="form-input"
+          name="textarea"
+          placeholder=" "
+        />
+        <span class="form-label">Комментарий</span>
+        <span class="icon"></span>
+      </label>
+
+      <label class="form-field">
+        <input type="email" class="form-input" name="mail" placeholder=" " />
+        <span class="form-label">Почта</span>
+        <span class="icon"></span>
+      </label>
+
+      <label class="agreement">
+        <input class="checkbox" type="checkbox" name="topic" value="html" />
+        <svg class="icon-chek">
+          <use href="./img/a2.svg#icon-chek" width="20px" height="20px"></use>
+        </svg>
+        <!--<span class="icon"></span>-->
+        <span class="text"
+          >Соглашаюсь с рассылкой и принимаю
+          <a href="">Условия договора</a></span
+        >
+      </label>
+      <button type="submit">Оставить заявку</button>
+    </form>
+    <div class="container">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
     </div>
     <script src="./js/modal.js"></script>
   </body>
